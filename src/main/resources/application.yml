@@ -8,6 +8,6 @@ server:
     connection-timeout: 2s
     keep-alive-timeout: 15s
     threads:
-      max: 50
+      max: 100
       min-spare: 5
 
