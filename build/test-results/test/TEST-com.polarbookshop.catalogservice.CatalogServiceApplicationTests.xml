@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.polarbookshop.catalogservice.CatalogServiceApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-13T02:24:03" hostname="idongmin-ui-MacBookPro.local" time="0.789">
+<testsuite name="com.polarbookshop.catalogservice.CatalogServiceApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-16T16:52:21" hostname="idongmin-ui-MacBookPro.local" time="0.862">
   <properties/>
-  <testcase name="whenPostRequestThenBookCreated()" classname="com.polarbookshop.catalogservice.CatalogServiceApplicationTests" time="0.789"/>
-  <system-out><![CDATA[11:24:02.852 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.polarbookshop.catalogservice.CatalogServiceApplicationTests]: CatalogServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-11:24:02.901 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.polarbookshop.catalogservice.CatalogServiceApplication for test class com.polarbookshop.catalogservice.CatalogServiceApplicationTests
+  <testcase name="whenPostRequestThenBookCreated()" classname="com.polarbookshop.catalogservice.CatalogServiceApplicationTests" time="0.862"/>
+  <system-out><![CDATA[01:52:16.960 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.polarbookshop.catalogservice.CatalogServiceApplicationTests]: CatalogServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+01:52:17.016 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.polarbookshop.catalogservice.CatalogServiceApplication for test class com.polarbookshop.catalogservice.CatalogServiceApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -13,19 +13,49 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.4)
 
-2024-04-13T11:24:03.111+09:00  INFO 17260 --- [catalog-service] [    Test worker] c.p.c.CatalogServiceApplicationTests     : Starting CatalogServiceApplicationTests using Java 17.0.10 with PID 17260 (started by dongmin in /Users/dongmin/study/cloud-native-spring/catalog-service)
-2024-04-13T11:24:03.111+09:00  INFO 17260 --- [catalog-service] [    Test worker] c.p.c.CatalogServiceApplicationTests     : No active profile set, falling back to 1 default profile: "default"
-2024-04-13T11:24:03.570+09:00  INFO 17260 --- [catalog-service] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
-2024-04-13T11:24:03.576+09:00  INFO 17260 --- [catalog-service] [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-04-13T11:24:03.576+09:00  INFO 17260 --- [catalog-service] [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2024-04-13T11:24:03.610+09:00  INFO 17260 --- [catalog-service] [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-04-13T11:24:03.611+09:00  INFO 17260 --- [catalog-service] [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 489 ms
-2024-04-13T11:24:03.873+09:00  INFO 17260 --- [catalog-service] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 54472 (http) with context path ''
-2024-04-13T11:24:03.879+09:00  INFO 17260 --- [catalog-service] [    Test worker] c.p.c.CatalogServiceApplicationTests     : Started CatalogServiceApplicationTests in 0.907 seconds (process running for 1.489)
-2024-04-13T11:24:04.487+09:00 ERROR 17260 --- [catalog-service] [    Test worker] i.n.r.d.DnsServerAddressStreamProviders  : Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
-2024-04-13T11:24:04.635+09:00  INFO 17260 --- [catalog-service] [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-04-13T11:24:04.635+09:00  INFO 17260 --- [catalog-service] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-04-13T11:24:04.636+09:00  INFO 17260 --- [catalog-service] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-04-17T01:52:18.482+09:00  INFO 91558 --- [catalog-service] [    Test worker] c.p.c.CatalogServiceApplicationTests     : Starting CatalogServiceApplicationTests using Java 17.0.10 with PID 91558 (started by dongmin in /Users/dongmin/study/cloud-native-spring/catalog-service)
+2024-04-17T01:52:18.483+09:00  INFO 91558 --- [catalog-service] [    Test worker] c.p.c.CatalogServiceApplicationTests     : The following 1 profile is active: "integration"
+2024-04-17T01:52:18.492+09:00  INFO 91558 --- [catalog-service] [    Test worker] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2024-04-17T01:52:18.492+09:00  INFO 91558 --- [catalog-service] [    Test worker] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=catalog-service, profiles=[default], label=null, version=78c6bddd7ff2fde14982086e08dd280fa2d11680, state=null
+2024-04-17T01:52:18.492+09:00  INFO 91558 --- [catalog-service] [    Test worker] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2024-04-17T01:52:18.492+09:00  INFO 91558 --- [catalog-service] [    Test worker] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=catalog-service, profiles=[integration], label=null, version=78c6bddd7ff2fde14982086e08dd280fa2d11680, state=null
+2024-04-17T01:52:18.935+09:00  INFO 91558 --- [catalog-service] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-04-17T01:52:19.005+09:00  INFO 91558 --- [catalog-service] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 1 JDBC repository interface.
+2024-04-17T01:52:19.106+09:00  INFO 91558 --- [catalog-service] [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a7e4bdd1-eb3e-3596-bed7-fb34e73bd659
+2024-04-17T01:52:19.295+09:00  INFO 91558 --- [catalog-service] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-04-17T01:52:19.301+09:00  INFO 91558 --- [catalog-service] [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-17T01:52:19.302+09:00  INFO 91558 --- [catalog-service] [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-17T01:52:19.346+09:00  INFO 91558 --- [catalog-service] [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-17T01:52:19.346+09:00  INFO 91558 --- [catalog-service] [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 853 ms
+2024-04-17T01:52:19.445+09:00  INFO 91558 --- [catalog-service] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-17T01:52:19.478+09:00  INFO 91558 --- [catalog-service] [    Test worker] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2024-04-17T01:52:19.492+09:00  INFO 91558 --- [catalog-service] [    Test worker] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2024-04-17T01:52:19.723+09:00  INFO 91558 --- [catalog-service] [    Test worker] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2024-04-17T01:52:19.724+09:00  INFO 91558 --- [catalog-service] [    Test worker] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+2024-04-17T01:52:19.745+09:00  INFO 91558 --- [catalog-service] [    Test worker] org.testcontainers.DockerClientFactory   : Connected to docker: 
+  Server Version: 25.0.3
+  API Version: 1.44
+  Operating System: Docker Desktop
+  Total Memory: 7841 MB
+2024-04-17T01:52:19.772+09:00  INFO 91558 --- [catalog-service] [    Test worker] ]]>&#x1f433;<![CDATA[ [testcontainers/ryuk:0.3.3]           : Creating container for image: testcontainers/ryuk:0.3.3
+2024-04-17T01:52:19.878+09:00  INFO 91558 --- [catalog-service] [    Test worker] o.t.utility.RegistryAuthLocator          : Credential helper/store (docker-credential-desktop) does not have credentials for https://index.docker.io/v1/
+2024-04-17T01:52:19.956+09:00  INFO 91558 --- [catalog-service] [    Test worker] ]]>&#x1f433;<![CDATA[ [testcontainers/ryuk:0.3.3]           : Container testcontainers/ryuk:0.3.3 is starting: 281260573f614e442590c4b12e50cdce933bf51d3e487d870af01adc5cedee6a
+2024-04-17T01:52:20.142+09:00  INFO 91558 --- [catalog-service] [    Test worker] ]]>&#x1f433;<![CDATA[ [testcontainers/ryuk:0.3.3]           : Container testcontainers/ryuk:0.3.3 started in PT0.391901S
+2024-04-17T01:52:20.146+09:00  INFO 91558 --- [catalog-service] [    Test worker] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2024-04-17T01:52:20.146+09:00  INFO 91558 --- [catalog-service] [    Test worker] org.testcontainers.DockerClientFactory   : Checking the system...
+2024-04-17T01:52:20.146+09:00  INFO 91558 --- [catalog-service] [    Test worker] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+2024-04-17T01:52:20.147+09:00  INFO 91558 --- [catalog-service] [    Test worker] ]]>&#x1f433;<![CDATA[ [postgres:14.4]                       : Creating container for image: postgres:14.4
+2024-04-17T01:52:20.166+09:00  INFO 91558 --- [catalog-service] [    Test worker] ]]>&#x1f433;<![CDATA[ [postgres:14.4]                       : Container postgres:14.4 is starting: 80805b002ead053b59e8fecfcac7243ce022b0712ecf6acdac8dba4b2247f1c3
+2024-04-17T01:52:20.985+09:00  INFO 91558 --- [catalog-service] [    Test worker] ]]>&#x1f433;<![CDATA[ [postgres:14.4]                       : Container postgres:14.4 started in PT0.838873S
+2024-04-17T01:52:21.091+09:00  INFO 91558 --- [catalog-service] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.testcontainers.jdbc.ConnectionWrapper@63614cdd
+2024-04-17T01:52:21.092+09:00  INFO 91558 --- [catalog-service] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-17T01:52:21.513+09:00  INFO 91558 --- [catalog-service] [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-17T01:52:21.644+09:00  INFO 91558 --- [catalog-service] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 57003 (http) with context path ''
+2024-04-17T01:52:21.665+09:00  INFO 91558 --- [catalog-service] [    Test worker] c.p.c.CatalogServiceApplicationTests     : Started CatalogServiceApplicationTests in 4.575 seconds (process running for 5.171)
+2024-04-17T01:52:22.290+09:00 ERROR 91558 --- [catalog-service] [    Test worker] i.n.r.d.DnsServerAddressStreamProviders  : Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2024-04-17T01:52:22.427+09:00  INFO 91558 --- [catalog-service] [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-17T01:52:22.428+09:00  INFO 91558 --- [catalog-service] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-17T01:52:22.428+09:00  INFO 91558 --- [catalog-service] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
