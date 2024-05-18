@@ -16,7 +16,7 @@ public record Book (
     @Id
     Long id,
 
-    @NotBlank(message = "The book ISBN must be defined")
+    @NotBlank(message = "The book ISBN must be defined.")
     @Pattern(
         regexp = "^([0-9]{10}|[0-9]{13})$",
         message = "The ISBN format must be valid."
